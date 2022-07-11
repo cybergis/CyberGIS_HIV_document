@@ -31,7 +31,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [ 
-    'sphinx_gallery.gen_gallery',
+    # 'sphinx_gallery.gen_gallery',
     'myst_parser',
     'sphinxcontrib.video'
 ]
@@ -45,10 +45,10 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # sphinx-gallery configurations
-sphinx_gallery_conf = {
-    'examples_dirs':'examples',
-    'gallery_dirs':'build/auto_examples',
-}
+# sphinx_gallery_conf = {
+#     'examples_dirs':'examples',
+#     'gallery_dirs':'build/auto_examples',
+# }
 
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -66,11 +66,11 @@ source_suffix = {
 #
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    "repository_url" : "https://github.com/N-Jaro/CyberGIS_HIV_document",
+    "repository_url" : "https://github.com/cybergis/CyberGIS_HIV_document",
     "use_repository_button": "True",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['images', 'myimages', 'videos']
