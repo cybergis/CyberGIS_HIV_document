@@ -11,15 +11,14 @@ The documentation in this repo is created using [sphinx-doc](https://www.sphinx-
 The source code for this documentation are in [docs/source/](https://github.com/cybergis/CyberGIS_HIV_document/tree/main/docs/source) folder. The folder content are as follows:
 
 ### Folders:
-**_static**: contains all statics resources such as the images, video, etc. To reference to the resources in the template just put the resource in this folder and use the path "_static/\<resource file name\>"
+**images**: image resources 
+**videos** : all videos used on the document website
+
 
 ### Page templates 
-
-**index.rst**: template for the [index page](https://cybergis.github.io/CyberGIS-Vis-Documentation/) of the documentation  
-**CyberGISX.rst**: template of the [Getting Start with CyberGISX](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/CyberGISX.html) page  
-**QuanData.rst**: template of the [quantification data visualization](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/QuantDataVis.html) page  
-**CatDataVis.rst**: template of the [categorical data visualization](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/CatDataVis.html) page  
-**Example.rst**: template of the [Example Code](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/QuantDataVis.html) page  
+**index.rst**: template for the [Get Started](https://cybergis.github.io/CyberGIS_HIV_document/build/html/index.html) of the documentation  
+**parameters.rst**: template of the [Customizing Parameters](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/CyberGISX.html) page  
+**showcase.rst**: template of the [Showcase Gallery](https://cybergis.github.io/CyberGIS-Vis-Documentation/build/QuantDataVis.html) page  
 
 ### Configurations 
 
