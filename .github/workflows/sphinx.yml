@@ -10,15 +10,17 @@ jobs:
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
-        pre-build-command: "python -m pip install sphinx==5.0.2 sphinx-gallery myst-parser sphinxcontrib.video sphinx-book-theme matplotlib"
+        pre-build-command: "python -m pip install sphinx==4.5.0 myst-parser sphinxcontrib.video sphinx-book-theme matplotlib"
+        docs-folder: "docs/"
+        build-command: "sphinx-build -ab html ./source ./build"
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
         name: html-docs
-        path: docs/build/html/
+        path: docs/build/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/build/html
+        publish_dir: docs/build/
