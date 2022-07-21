@@ -1,0 +1,9 @@
+sphinx==4.2.0
+sphinx_rtd_theme==1.0.0
+sphinx_book_theme==0.3.0.rc1
+readthedocs-sphinx-search==0.1.1
+sphinxcontrib-fulltoc==1.2.0
+sphinx-gallery==0.10.1
+myst-parser==0.17.2
+mdit-py-plugins==0.3.0
+typing-extensions==4.2.0

@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Unicode everywhere 🤗 &#8212; CyberGIS-HIV  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">CyberGIS-HIV  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Quick Start
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../parameters.html">
+   Customizing Parameters
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Visualization Modules
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Showcase.html">
+   Showcase Gallery
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/cybergis/CyberGIS-Vis">
+   GitHub Repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu/">
+   CyberGISX
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/auto_examples/plot_5_unicode_everywhere.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/bravoyourlif/SAM-Documentation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Using Unicode everywhere 🤗</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-plot-5-unicode-everywhere-py"><span class="std std-ref">here</span></a>
+to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="using-unicode-everywhere">
+<span id="sphx-glr-auto-examples-plot-5-unicode-everywhere-py"></span><h1>Using Unicode everywhere 🤗<a class="headerlink" href="#using-unicode-everywhere" title="Permalink to this headline">¶</a></h1>
+<p>This example demonstrates how to include non-ASCII characters, mostly emoji 🎉
+to stress test the build and test environments that parse the example files.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="c1"># 🎉 👍</span>
+<span class="c1"># Code source: Óscar Nájera</span>
+<span class="c1"># License: BSD 3 clause</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;font.monospace&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DejaVu Sans Mono&quot;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;font.family&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;monospace&quot;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">*</span> <span class="mi">800</span> <span class="o">+</span> <span class="mi">500</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\oint$&#39;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">-</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\clubsuit$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;⇒&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;⇒&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;♲&#39;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Std out capture 😎&#39;</span><span class="p">)</span>
+<span class="c1"># To avoid matplotlib text output</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Std out capture 😎
+</pre></div>
+</div>
+<p>Debug fonts</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>_internal.classic_mode: False
+agg.path.chunksize: 0
+animation.bitrate: -1
+animation.codec: h264
+animation.convert_args: []
+animation.convert_path: convert
+animation.embed_limit: 20.0
+animation.ffmpeg_args: []
+animation.ffmpeg_path: ffmpeg
+animation.frame_format: png
+animation.html: none
+animation.writer: ffmpeg
+axes.autolimit_mode: data
+axes.axisbelow: line
+axes.edgecolor: black
+axes.facecolor: white
+axes.formatter.limits: [-5, 6]
+axes.formatter.min_exponent: 0
+axes.formatter.offset_threshold: 4
+axes.formatter.use_locale: False
+axes.formatter.use_mathtext: False
+axes.formatter.useoffset: True
+axes.grid: False
+axes.grid.axis: both
+axes.grid.which: major
+axes.labelcolor: black
+axes.labelpad: 4.0
+axes.labelsize: medium
+axes.labelweight: normal
+axes.linewidth: 0.8
+axes.prop_cycle: cycler(&#39;color&#39;, [&#39;#1f77b4&#39;, &#39;#ff7f0e&#39;, &#39;#2ca02c&#39;, &#39;#d62728&#39;, &#39;#9467bd&#39;, &#39;#8c564b&#39;, &#39;#e377c2&#39;, &#39;#7f7f7f&#39;, &#39;#bcbd22&#39;, &#39;#17becf&#39;])
+axes.spines.bottom: True
+axes.spines.left: True
+axes.spines.right: True
+axes.spines.top: True
+axes.titlecolor: auto
+axes.titlelocation: center
+axes.titlepad: 6.0
+axes.titlesize: large
+axes.titleweight: normal
+axes.titley: None
+axes.unicode_minus: True
+axes.xmargin: 0.05
+axes.ymargin: 0.05
+axes.zmargin: 0.05
+axes3d.grid: True
+backend: agg
+backend_fallback: False
+boxplot.bootstrap: None
+boxplot.boxprops.color: black
+boxplot.boxprops.linestyle: -
+boxplot.boxprops.linewidth: 1.0
+boxplot.capprops.color: black
+boxplot.capprops.linestyle: -
+boxplot.capprops.linewidth: 1.0
+boxplot.flierprops.color: black
+boxplot.flierprops.linestyle: none
+boxplot.flierprops.linewidth: 1.0
+boxplot.flierprops.marker: o
+boxplot.flierprops.markeredgecolor: black
+boxplot.flierprops.markeredgewidth: 1.0
+boxplot.flierprops.markerfacecolor: none
+boxplot.flierprops.markersize: 6.0
+boxplot.meanline: False
+boxplot.meanprops.color: C2
+boxplot.meanprops.linestyle: --
+boxplot.meanprops.linewidth: 1.0
+boxplot.meanprops.marker: ^
+boxplot.meanprops.markeredgecolor: C2
+boxplot.meanprops.markerfacecolor: C2
+boxplot.meanprops.markersize: 6.0
+boxplot.medianprops.color: C1
+boxplot.medianprops.linestyle: -
+boxplot.medianprops.linewidth: 1.0
+boxplot.notch: False
+boxplot.patchartist: False
+boxplot.showbox: True
+boxplot.showcaps: True
+boxplot.showfliers: True
+boxplot.showmeans: False
+boxplot.vertical: True
+boxplot.whiskerprops.color: black
+boxplot.whiskerprops.linestyle: -
+boxplot.whiskerprops.linewidth: 1.0
+boxplot.whiskers: 1.5
+contour.corner_mask: True
+contour.linewidth: None
+contour.negative_linestyle: dashed
+date.autoformatter.day: %Y-%m-%d
+date.autoformatter.hour: %m-%d %H
+date.autoformatter.microsecond: %M:%S.%f
+date.autoformatter.minute: %d %H:%M
+date.autoformatter.month: %Y-%m
+date.autoformatter.second: %H:%M:%S
+date.autoformatter.year: %Y
+date.converter: auto
+date.epoch: 1970-01-01T00:00:00
+date.interval_multiples: True
+docstring.hardcopy: False
+errorbar.capsize: 0.0
+figure.autolayout: False
+figure.constrained_layout.h_pad: 0.04167
+figure.constrained_layout.hspace: 0.02
+figure.constrained_layout.use: False
+figure.constrained_layout.w_pad: 0.04167
+figure.constrained_layout.wspace: 0.02
+figure.dpi: 100.0
+figure.edgecolor: white
+figure.facecolor: white
+figure.figsize: [6.4, 4.8]
+figure.frameon: True
+figure.max_open_warning: 20
+figure.raise_window: True
+figure.subplot.bottom: 0.11
+figure.subplot.hspace: 0.2
+figure.subplot.left: 0.125
+figure.subplot.right: 0.9
+figure.subplot.top: 0.88
+figure.subplot.wspace: 0.2
+figure.titlesize: large
+figure.titleweight: normal
+font.cursive: [&#39;Apple Chancery&#39;, &#39;Textile&#39;, &#39;Zapf Chancery&#39;, &#39;Sand&#39;, &#39;Script MT&#39;, &#39;Felipa&#39;, &#39;Comic Neue&#39;, &#39;Comic Sans MS&#39;, &#39;cursive&#39;]
+font.family: [&#39;monospace&#39;]
+font.fantasy: [&#39;Chicago&#39;, &#39;Charcoal&#39;, &#39;Impact&#39;, &#39;Western&#39;, &#39;Humor Sans&#39;, &#39;xkcd&#39;, &#39;fantasy&#39;]
+font.monospace: [&#39;DejaVu Sans Mono&#39;]
+font.sans-serif: [&#39;DejaVu Sans&#39;, &#39;Bitstream Vera Sans&#39;, &#39;Computer Modern Sans Serif&#39;, &#39;Lucida Grande&#39;, &#39;Verdana&#39;, &#39;Geneva&#39;, &#39;Lucid&#39;, &#39;Arial&#39;, &#39;Helvetica&#39;, &#39;Avant Garde&#39;, &#39;sans-serif&#39;]
+font.serif: [&#39;DejaVu Serif&#39;, &#39;Bitstream Vera Serif&#39;, &#39;Computer Modern Roman&#39;, &#39;New Century Schoolbook&#39;, &#39;Century Schoolbook L&#39;, &#39;Utopia&#39;, &#39;ITC Bookman&#39;, &#39;Bookman&#39;, &#39;Nimbus Roman No9 L&#39;, &#39;Times New Roman&#39;, &#39;Times&#39;, &#39;Palatino&#39;, &#39;Charter&#39;, &#39;serif&#39;]
+font.size: 20.0
+font.stretch: normal
+font.style: normal
+font.variant: normal
+font.weight: normal
+grid.alpha: 1.0
+grid.color: #b0b0b0
+grid.linestyle: -
+grid.linewidth: 0.8
+hatch.color: black
+hatch.linewidth: 1.0
+hist.bins: 10
+image.aspect: equal
+image.cmap: viridis
+image.composite_image: True
+image.interpolation: antialiased
+image.lut: 256
+image.origin: upper
+image.resample: True
+interactive: False
+keymap.back: [&#39;left&#39;, &#39;c&#39;, &#39;backspace&#39;, &#39;MouseButton.BACK&#39;]
+keymap.copy: [&#39;ctrl+c&#39;, &#39;cmd+c&#39;]
+keymap.forward: [&#39;right&#39;, &#39;v&#39;, &#39;MouseButton.FORWARD&#39;]
+keymap.fullscreen: [&#39;f&#39;, &#39;ctrl+f&#39;]
+keymap.grid: [&#39;g&#39;]
+keymap.grid_minor: [&#39;G&#39;]
+keymap.help: [&#39;f1&#39;]
+keymap.home: [&#39;h&#39;, &#39;r&#39;, &#39;home&#39;]
+keymap.pan: [&#39;p&#39;]
+keymap.quit: [&#39;ctrl+w&#39;, &#39;cmd+w&#39;, &#39;q&#39;]
+keymap.quit_all: []
+keymap.save: [&#39;s&#39;, &#39;ctrl+s&#39;]
+keymap.xscale: [&#39;k&#39;, &#39;L&#39;]
+keymap.yscale: [&#39;l&#39;]
+keymap.zoom: [&#39;o&#39;]
+legend.borderaxespad: 0.5
+legend.borderpad: 0.4
+legend.columnspacing: 2.0
+legend.edgecolor: 0.8
+legend.facecolor: inherit
+legend.fancybox: True
+legend.fontsize: medium
+legend.framealpha: 0.8
+legend.frameon: True
+legend.handleheight: 0.7
+legend.handlelength: 2.0
+legend.handletextpad: 0.8
+legend.labelcolor: None
+legend.labelspacing: 0.5
+legend.loc: best
+legend.markerscale: 1.0
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.shadow: False
+legend.title_fontsize: None
+lines.antialiased: True
+lines.color: C0
+lines.dash_capstyle: butt
+lines.dash_joinstyle: round
+lines.dashdot_pattern: [6.4, 1.6, 1.0, 1.6]
+lines.dashed_pattern: [3.7, 1.6]
+lines.dotted_pattern: [1.0, 1.65]
+lines.linestyle: -
+lines.linewidth: 1.5
+lines.marker: None
+lines.markeredgecolor: auto
+lines.markeredgewidth: 1.0
+lines.markerfacecolor: auto
+lines.markersize: 6.0
+lines.scale_dashes: True
+lines.solid_capstyle: projecting
+lines.solid_joinstyle: round
+markers.fillstyle: full
+mathtext.bf: sans:bold
+mathtext.cal: cursive
+mathtext.default: it
+mathtext.fallback: cm
+mathtext.fontset: dejavusans
+mathtext.it: sans:italic
+mathtext.rm: sans
+mathtext.sf: sans
+mathtext.tt: monospace
+patch.antialiased: True
+patch.edgecolor: black
+patch.facecolor: C0
+patch.force_edgecolor: False
+patch.linewidth: 1.0
+path.effects: []
+path.simplify: True
+path.simplify_threshold: 0.111111111111
+path.sketch: None
+path.snap: True
+pcolor.shading: auto
+pcolormesh.snap: True
+pdf.compression: 6
+pdf.fonttype: 3
+pdf.inheritcolor: False
+pdf.use14corefonts: False
+pgf.preamble:
+pgf.rcfonts: True
+pgf.texsystem: xelatex
+polaraxes.grid: True
+ps.distiller.res: 6000
+ps.fonttype: 3
+ps.papersize: letter
+ps.useafm: False
+ps.usedistiller: None
+savefig.bbox: None
+savefig.directory: ~
+savefig.dpi: figure
+savefig.edgecolor: auto
+savefig.facecolor: auto
+savefig.format: png
+savefig.orientation: portrait
+savefig.pad_inches: 0.1
+savefig.transparent: False
+scatter.edgecolors: face
+scatter.marker: o
+svg.fonttype: path
+svg.hashsalt: None
+svg.image_inline: True
+text.antialiased: True
+text.color: black
+text.hinting: force_autohint
+text.hinting_factor: 8
+text.kerning_factor: 0
+text.latex.preamble:
+text.usetex: False
+timezone: UTC
+tk.window_focus: False
+toolbar: toolbar2
+webagg.address: 127.0.0.1
+webagg.open_in_browser: True
+webagg.port: 8988
+webagg.port_retries: 50
+xaxis.labellocation: center
+xtick.alignment: center
+xtick.bottom: True
+xtick.color: black
+xtick.direction: out
+xtick.labelbottom: True
+xtick.labelcolor: inherit
+xtick.labelsize: medium
+xtick.labeltop: False
+xtick.major.bottom: True
+xtick.major.pad: 3.5
+xtick.major.size: 3.5
+xtick.major.top: True
+xtick.major.width: 0.8
+xtick.minor.bottom: True
+xtick.minor.pad: 3.4
+xtick.minor.size: 2.0
+xtick.minor.top: True
+xtick.minor.visible: False
+xtick.minor.width: 0.6
+xtick.top: False
+yaxis.labellocation: center
+ytick.alignment: center_baseline
+ytick.color: black
+ytick.direction: out
+ytick.labelcolor: inherit
+ytick.labelleft: True
+ytick.labelright: False
+ytick.labelsize: medium
+ytick.left: True
+ytick.major.left: True
+ytick.major.pad: 3.5
+ytick.major.right: True
+ytick.major.size: 3.5
+ytick.major.width: 0.8
+ytick.minor.left: True
+ytick.minor.pad: 3.4
+ytick.minor.right: True
+ytick.minor.size: 2.0
+ytick.minor.visible: False
+ytick.minor.width: 0.6
+ytick.right: False
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.145 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-5-unicode-everywhere-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/563afb1bdb580ce8f3641f8b72530b7b/plot_5_unicode_everywhere.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_5_unicode_everywhere.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/3fb5e83c982eee34e44e69a040185cbf/plot_5_unicode_everywhere.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_5_unicode_everywhere.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By CyberGIS Center<br/>
+    
+        &copy; Copyright 2022, CyberGIS Center.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

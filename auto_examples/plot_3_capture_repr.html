@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capturing output representations &#8212; CyberGIS-HIV  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">CyberGIS-HIV  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Quick Start
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../parameters.html">
+   Customizing Parameters
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Visualization Modules
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Showcase.html">
+   Showcase Gallery
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/cybergis/CyberGIS-Vis">
+   GitHub Repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu/">
+   CyberGISX
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/auto_examples/plot_3_capture_repr.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/bravoyourlif/SAM-Documentation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matplotlib-output">
+   Matplotlib output
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-capture-repr-configuration">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     capture_repr
+    </span>
+   </code>
+   configuration
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Capturing output representations</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matplotlib-output">
+   Matplotlib output
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-capture-repr-configuration">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     capture_repr
+    </span>
+   </code>
+   configuration
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-plot-3-capture-repr-py"><span class="std std-ref">here</span></a>
+to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="capturing-output-representations">
+<span id="capture-repr-examples"></span><span id="sphx-glr-auto-examples-plot-3-capture-repr-py"></span><h1>Capturing output representations<a class="headerlink" href="#capturing-output-representations" title="Permalink to this headline">¶</a></h1>
+<p>This example demonstrates how the configuration <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code>
+(<span class="xref std std-ref">capture_repr</span>) works. The default <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> setting is
+<code class="docutils literal notranslate"><span class="pre">capture_repr:</span> <span class="pre">('_repr_html_',</span> <span class="pre">'__repr__')</span></code> and was used when building the
+Sphinx-Gallery documentation. The output that is captured with this setting
+is demonstrated in this example. Differences in outputs that would be captured
+with other <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> settings is also explained.</p>
+<p>Nothing is captured for the code block below because no data is directed to
+standard output and the last statement is an assignment, not an expression.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example 1</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<p>If you did wish to capture the value of <code class="docutils literal notranslate"><span class="pre">b</span></code>, you would need to use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example 2</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span>   <span class="c1"># this is an expression</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+<p>Sphinx-Gallery first attempts to capture the <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> of <code class="docutils literal notranslate"><span class="pre">b</span></code> as this
+is the first ‘representation’ method in the <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> tuple. As this
+method does not exist for <code class="docutils literal notranslate"><span class="pre">b</span></code>, Sphinx-Gallery moves on and tries to capture
+the <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> method, which is second in the tuple. This does exist for
+<code class="docutils literal notranslate"><span class="pre">b</span></code> so it is captured and the output is seen above.</p>
+<p>A pandas dataframe is used in the code block below to provide an example of
+an expression with a <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> method.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example 3</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>col1</th>
+      <th>col2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br />
+<br /><p>The pandas dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code> has both a <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> and <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code>
+method. As <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> appears first in the <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> tuple, the
+<code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> is captured in preference to <code class="docutils literal notranslate"><span class="pre">__repr__</span></code>.</p>
+<p>For the example below, there is data directed to standard output and the last
+statement is an expression.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example 4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Hello world
+
+12
+</pre></div>
+</div>
+<p>Statsmodels tables should also be styled appropriately:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example 5</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">statsmodels.iolib.table</span>
+<span class="n">statsmodels</span><span class="o">.</span><span class="n">iolib</span><span class="o">.</span><span class="n">table</span><span class="o">.</span><span class="n">SimpleTable</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<table class="simpletable">
+<tr>
+  <td>0.0</td> <td>0.0</td> <td>0.0</td>
+</tr>
+<tr>
+  <td>0.0</td> <td>0.0</td> <td>0.0</td>
+</tr>
+<tr>
+  <td>0.0</td> <td>0.0</td> <td>0.0</td>
+</tr>
+</table>
+</div>
+<br />
+<br /><p><code class="docutils literal notranslate"><span class="pre">print()</span></code> outputs to standard output, which is always captured. The
+string <code class="docutils literal notranslate"><span class="pre">'Hello</span> <span class="pre">world'</span></code> is thus captured. A ‘representation’ of the last
+expression is also captured. Again, since this expression <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span></code> does not
+have a <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> method, the <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> method is captured.</p>
+<div class="section" id="matplotlib-output">
+<h2>Matplotlib output<a class="headerlink" href="#matplotlib-output" title="Permalink to this headline">¶</a></h2>
+<p>Matplotlib function calls generally return a Matplotlib object as well as
+outputting the figure. For code blocks where the last statement is a
+Matplotlib expression, a ‘representation’ of the object will be captured, as
+well as the plot. This is because Matplotlib objects have a <code class="docutils literal notranslate"><span class="pre">__repr__</span></code>
+method and our <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> tuple contains <code class="docutils literal notranslate"><span class="pre">__repr__</span></code>. Note that
+Matplotlib objects also have a <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method.</p>
+<p>In the example below, <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.plot()</span></code> returns a list of
+<code class="docutils literal notranslate"><span class="pre">Line2D</span></code> objects representing the plotted data and the <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> of the
+list is captured as well as the figure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D object at 0x0000025C7F5C7D60&gt;]
+</pre></div>
+</div>
+<p>To avoid capturing the text representation, you can assign the last Matplotlib
+expression to a temporary variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Alternatively, you can add <code class="docutils literal notranslate"><span class="pre">plt.show()</span></code>, which does not return anything,
+to the end of the code block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-capture-repr-configuration">
+<h2>The <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> configuration<a class="headerlink" href="#the-capture-repr-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> configuration is <code class="docutils literal notranslate"><span class="pre">('_repr_html_',</span> <span class="pre">'__repr__')</span></code> by
+default. This directs Sphinx-Gallery to capture ‘representations’ of the last
+statement of a code block, if it is an expression. Sphinx-Gallery does
+this according to the order ‘representations’ appear in the tuple. With the
+default <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> setting, <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> is attempted to be captured
+first. If this method does not exist, the <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> method would be
+captured. If the <code class="docutils literal notranslate"><span class="pre">__repr__</span></code> also does not exist (unlikely for non-user
+defined objects), nothing would be captured. For example, if the the
+configuration was set to <code class="docutils literal notranslate"><span class="pre">'capture_repr':</span> <span class="pre">('_repr_html_')</span></code> nothing would be
+captured for example 2 as <code class="docutils literal notranslate"><span class="pre">b</span></code> does not have a <code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code>.
+You can change the ‘representations’ in the <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code> tuple to finely
+tune what is captured in your example <code class="docutils literal notranslate"><span class="pre">.py</span></code> files.</p>
+<p>To only capture data directed to standard output you can set <code class="docutils literal notranslate"><span class="pre">capture_repr</span></code>
+to be an empty tuple: <code class="docutils literal notranslate"><span class="pre">capture_repr:</span> <span class="pre">()</span></code>. With this setting, only data
+directed to standard output is captured. For the examples above, output would
+only be captured for example 4. Although the last statement is an expression
+for examples 2, 3 and 4 no ‘representation’ of the last expression would be
+output. You would need to add <code class="docutils literal notranslate"><span class="pre">print()</span></code> to the last expression to capture
+a ‘representation’ of it. The empty tuple setting imitates the behaviour of
+Sphinx-Gallery prior to v0.5.0, when this configuration was introduced.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.710 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-3-capture-repr-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/e416f89b8144da569a962aa9456521a9/plot_3_capture_repr.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_3_capture_repr.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/77c60e8b4d97c4b166dbc9504f2ba019/plot_3_capture_repr.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_3_capture_repr.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By CyberGIS Center<br/>
+    
+        &copy; Copyright 2022, CyberGIS Center.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
