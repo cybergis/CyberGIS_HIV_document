@@ -65,9 +65,7 @@ Model
 
 Data
 -------
-
-`Click to see the description of data. <http://su-gis.iptime.org/HIV/HIV_Data.docx>`_ They are inputs of the model.
-
+To model new HIV diagnosis rates, we consider a variety of explanatory variables. For the full list of data and descriptions, click `here <data_table.html>`_ to see the description of data.
 
 Related Resources
 ------------------
