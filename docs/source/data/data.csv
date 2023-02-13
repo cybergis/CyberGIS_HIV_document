@@ -1,0 +1,134 @@
+﻿Variable,label,Description,Any transformation
+FIPS,FIPS,fips county code,None
+Year,year,year,None
+PopEstimate,annual resident population estimates,annual resident population estimates,None
+UnemploymentRate16p,unemployment rate ,Unemployment Rate of persons 16 +,None
+nDaysMeasuredAirQualityGood,number of days measured air quality good,number of days measured air quality good,None
+xGoodAirQualityDays,percentage of good air quality days,percentage of good air quality days,None
+NumberHHs,number of households,number of households,None
+PercentUrbanPop,percent urban population,percent urban population,None
+PercentUrbanHousingUnits,percent urban housing units,percent urban housing units,None
+xFamiliesBelowPovertyLevel,percentage of families below poverty ,percentage of families below poverty level,None
+xDisabledle18CivilNoninstl,percentage of disability for civilian noninstitutionalized population less than 18 ,percentage of disability for civilian noninstitutionalized population less than 18 years old (5 year average),None
+xDisabled1864CivilNoninstl,percentage of disability for civilian noninstitutionalized 18-64 years old,percentage of disability for civilian noninstitutionalized 18-64 years old population (5 year average),None
+xDisabled65pCivilNoninstl,percentage of disability for civilian noninstitutionalized population older than 65 ,percentage of disability for civilian noninstitutionalized population older than 65 years old (5 year average),None
+xDidNotWork1664,percentage of people aged 16-64 who didn't work,percentage of people aged 16-64 who didn't work,None
+xAgricForestFishHuntMineWorkers,percentage of Agricultural/Forestry/Fisheries/Hunting/Mining workers,percentage of Agricultural/Forestry/Fisheries/Hunting/Mining workers,None
+xConstructionWorkers,percentage of Construction workers,percentage of Construction workers,None
+xEducHealthSocAssWorkers,"percentage of Educational Services, and Health Care and Social Assistance workers","percentage of Educational Services, and Health Care and Social Assistance workers",None
+xManufacturingWorkers,percentage of Manufacturing workers,percentage of Manufacturing workers,None
+xWorkersinOtherIndustries,percentage of workers in other industries,percentage of workers in other industries,None
+nWorkersMeantraveltime16p,"number of workers, mean travel time, 16 +","number of workers, mean travel time, 16 +",None
+xFemalesDivorced,percent of females divorced,percent of females divorced,None
+5YrTotInfantMortRatele1yr,total infant mortality ,"5 year average total infant mortality rate, less than 1 year old",None
+syphilis_rate,syphilis rate,"the number of syphilis cases per 100,000 population",None
+chlamydia_rate,chlamydia rate,the number of chlamydia cases per 10000 population,none
+gonorrhea_rate,gonorrhea rate,the number of gonorrhea cases per 10000 population,none
+knowledge,knowledge,percentage of diagnosed infections among persons living with HIV infection,none
+linkage,linkage to care,percentage of diagnosed infections with at least 1 CD4 or viral load test performed ≤1 month after diagnosis,none
+hiv_rate,HIV rate,"the number of HIV cases per 100,000 population",none
+suppression_per,viral suppression,percentage of diagnosed infections with a viral load result of <200 copies /mL at the most recent viral load test during the previous year.,None
+hivmedic_per,receipt of HIV medication,percentage of diagnosed infections with ≥1 CD4 or viral load tests performed during the year.,None
+hcv,HCV death,deaths among persons with acute viral hepatitis C or chronic viral hepatitis C as an underlying cause of death,sqrt(x)
+opioid_prsc,opioid prescriptions,opioid prescriptions dispensed in the U.S. per 100 persons.,/10
+hivtst,HIV test,HIV test,/100
+PopMale1519_r,percentage of male population at age group 15-19 ,percentage of male population at age group 15-19 ,None
+PopMale2024_r,percentage of male population at age group 20-24,percentage of male population at age group 20-24,None
+PopMale2544_r,percentage of male population at age group 25-44,percentage of male population at age group 25-44,None
+PopMale4564_r,percentage of male population at age group 45-64,percentage of male population at age group 45-64,None
+PopMale65p_r,percentage of male population at age group 65 +,percentage of male population at age group 65 +,None
+PopFemale1519_r,percentage of female population at age group 15-19,percentage of female population at age group 15-19,None
+PopFemale2024_r,percentage of female population at age group 20-24,percentage of female population at age group 20-24,None
+PopFemale2544_r,percentage of female population at age group 25-44,percentage of female population at age group 25-44,None
+PopFemale4564_r,percentage of female population at age group 45-64,percentage of female population at age group 45-64,None
+PopFemale65p_r,percentage of female population at age group 65 +,percentage of female population at age group 65 +,None
+PopTotalMale_r,percentage of the population as Male,percentage of the population as Male,None
+PopWhite_r,percentage of White population,percentage of White population,None
+PopBlackAfrAm_r,percentage of Black African American population,percentage of Black African American population,None
+PopAsian_r,percentage of Asian population,percentage of Asian population,None
+PopTotHispLatino_r,percentage of Hispanic population,percentage of Hispanic population,None
+PopAmerIndAlaskaNat_r,percentage of American Indian/Alaska Native population,percentage of American Indian/Alaska Native population,None
+PopNatHawOthPacIsl_r,percentage of Native Hawaiian/other Pacific Islander population,percentage of Native Hawaiian/other Pacific Islander population,None
+PopTwopRaces_r,percentage of Two or more races population,percentage of Two or more races population,None
+MedicareEnrollmentAgedDisabledTot_r,percentage of population on Medicare,percentage of population on Medicare. The data include counts of Medicare beneficiaries with Medicare Part A which is also known as Hospital Insurance and Medicare Part B which is also known as Medical Insurance.,None
+Persons1864HealthInsurance_r,percentage of population between 18-64 with health insurance,percentage of population between 18-64 with health insurance,None
+Personsle19HealthInsurance_r,percentage of population less than 19 years old with health insurance,percentage of population less than 19 years old with health insurance,None
+PersonsinPoverty_r,percentage of Persons Age 0-17 in Poverty,percentage of Persons Aged 0-17 in Poverty,None
+FoodStampSNAPRecipientEstimate_r,percentage of people as Food Stamp/SNAP Recipients ,percentage of people as Food Stamp/SNAP Recipients ,None
+nHousingUnitsEstimate_r,number of Housing Unit per person,number of Housing Unit per person,None
+Persons25pYrsWleHSDiploma_r,percentage of persons 25 years or older with less than high school diploma,percentage of persons 25 years or older with less than high school diploma,None
+Persons25pWHSDiplOrMore_r,percentage of persons 25 years or older with a high school or more,percentage of persons 25 years or older with a high school or more,None
+nWorkersDriveAlone16p_r,percentage of workers who drive alone to work,percentage of workers who drive alone to work,None
+nWorkersCarpool16p_r,percentage of workers who use carpool to work,percentage of workers who use carpool to work,None
+nWorkersPublicTrans16p_r,percentage of workers who use public transportation to go to work,percentage of workers who use public transportation to go to work,None
+nWorkersWalktoWork16p_r,percentage of workers who walk to work,percentage of workers who walk to work,None
+nWorkersOtherMeansofTrans16p_r,percentage of workers who use other means of transportation to work,percentage of workers who use other means of transportation to work,None
+nWorkersWorkatHome16p_r,percentage of workers who work at home,percentage of workers who work at home,None
+nWorkersle5mintoWork16p_r,percentage of workers with mean travel time of less than 5 minutes to work,percentage of workers with mean travel time of less than 5 minutes to work,None
+nWorkers59mintoWork16p_r,percentage of workers with mean travel time of 5-9 minutes to work ,percentage of workers with mean travel time of 5-9 minutes to work ,None
+nWorkers1014mintoWork16p_r,percentage of workers with mean travel time of 10-14 minutes to work ,percentage of workers with mean travel time of 10-14 minutes to work ,None
+nWorkers1519mintoWork16p_r,percentage of workers with mean travel time of 15-20 minutes to work ,percentage of workers with mean travel time of 15-20 minutes to work ,None
+nWorkers2029mintoWork16p_r,percentage of workers with mean travel time of 20-29 minutes to work ,percentage of workers with mean travel time of 20-29 minutes to work ,None
+nWorkers3044mintoWork16p_r,percentage of workers with mean travel time of 30-44 minutes to work ,percentage of workers with mean travel time of 30-44 minutes to work ,None
+nWorkers4559mintoWork16p_r,percentage of workers with mean travel time of 45-59 minutes to work ,percentage of workers with mean travel time of 45-59 minutes to work ,None
+nWorkers6089mintoWork16p_r,percentage of workers with mean travel time of 60-89 minutes to work ,percentage of workers with mean travel time of 60-89 minutes to work ,None
+nWorkers90pmintoWork16p_r,percentage of workers with mean travel time of more than 90 minutes to work ,percentage of workers with mean travel time of more than 90 minutes to work ,None
+nOccupiedHousingUnits_r,number of occupied housing units ,number of occupied housing units per person ,None
+3YearIschemicHeartDisDeaths_n,percentage of ischemic heart disease deaths ,percentage of ischemic heart disease deaths per person (3-year average),/100
+MedianHHIncome_l,Median Household Income ,Median Household Income ,log(1+x)
+PerCapitaPersonalIncome_l,Per Capita Personal Income,Per Capita Personal Income estimates,log(1+x)
+illicit_l,illicit drug use,the use of illicit drugs in the past month,log(1+x)
+marijuana_l,Marijuana Use ,Marijuana Use in the Past Year,log(1+x)
+marijuana_init_l,First Use of Marijuana,First Use of Marijuana,log(1+x)
+cocaine_l,Cocaine Use,Cocaine Use in the Past Year,log(1+x)
+alcohol_l,Alcohol Use ,Alcohol Use in the Past Month,log(1+x)
+tobacco_l,Tobacco Product Use,Tobacco Product Use in the Past Month,log(1+x)
+cigar_l,Cigarette Use ,Cigarette Use in the Past Month,log(1+x)
+mental_severe_l,Serious Mental Illness,Serious Mental Illness in the Past Year,log(1+x)
+mental_l,Any Mental Illness ,Any Mental Illness in the Past Year,log(1+x)
+suicide_l,Had Serious Thoughts of Suicide,Had Serious Thoughts of Suicide in the Past Year,log(1+x)
+MedianHomeValue_l,median home value,median home value,log(1+x)
+MedianGrossRent_l,median gross rent,median gross rent,log(1+x)
+HHIncomeUnder10000_l,"household income, less than $10,000","household income, less than $10,000",log(1+x)
+depress_l,Major Depressive Episode ,Major Depressive Episode in the Past Year,log(1+x)
+TotalHospitalBeds_r_l,total hospital beds per person ,total hospital beds per person ,Log(1+1000*x)
+PhysNFPrimCarePatCareExclHspRsdnts_r_l,"number of Physicians, Excluding Hospital Residents ","number of Physicians, Non-Federal, Total Patient Care, Excluding Hospital Residents per person ",Log(1+10000*x)
+PhysNFPrimCarePatCareHospRsdnts_r_l,"number of Physicians, Hospital Residents per person","number of Physicians, Non-Federal, Total Patient Care, Hospital Residents per person",Log(1+10000*x)
+MDsNonFedTotGenPractTotal_r_l,"number of Medical Doctors, Total General Practice","number of Medical Doctors, Non-Federal, Total General Practice (General Practice and Family Medicine and Subspecialties), Total per person",Log(1+10000*x)
+MDsNFGenIntMedTotPatCare_r_l,"number of Medical Doctors, General Internal Medicine,","number of Medical Doctors, Non-Federal, General Internal Medicine, Total Patient Care per person",Log(1+10000*x)
+PhysicianAssistantswNPI_r_l,number of Physician Assistants ,number of Physician Assistants (per person) with an NPI per person,Log(1+10000*x)
+PopinJuvenilleFacilities_r_l,number of populations in Juvenile Facilities,percentage of population in Juvenile Facilities,Log(1+10000*x)
+AdvPracticeRegisteredNurseswNPIAPRN_r_l,number of Advanced Practice Nurse Midwives,"number of Advanced Practice Nurse Midwives, with CMS NPI per person ",Log(1+10000*x)
+NursePractitionerswNPI_r_l,number of Nurse Practitioners,"number of Nurse Practitioners, with CMS NPI per person ",Log(1+10000*x)
+STGHospwEmergencyDepartment_r_l,number of short-term general hospitals with emergency department,number of short-term general hospitals with emergency department per person,Log(1+100000*x)
+nHomeHealthAgencies_r_l,number of Home Health Agencies ,number of Home Health Agencies per person ,Log(1+100000*x)
+nCommunityMentalHealthCtrs_r_l,number of Community Mental Health centers ,number of Community Mental Health centers per person ,Log(1+100000*x)
+nFedQualifiedHealthCenters_r_l,number of Federally Qualified Health Centers ,number of Federally Qualified Health Centers per person ,Log(1+100000*x)
+nCommunityHealthCenters_r_l,number of Community Health,"number of Community Health, Centers Grantees Only per person ",Log(1+100000*x)
+nRuralHealthClinics_r_l,number of Rural Health Clinics ,number of Rural Health Clinics per person ,Log(1+100000*x)
+nNHSCPrimaryCareSiteswProv_r_l,number of NHSC Primary Care sites ,number of NHSC Primary Care sites per person ,Log(1+100000*x)
+nNHSCMentalHealthSiteswProv_r_l,number of NHSC Mental Health sites,number of NHSC Mental Health sites per person ,Log(1+100000*x)
+TotalNumberHospitals_r_l,number of hospitals ,total number of hospitals per person ,Log(1+100000*x)
+AdvPracticeNurseMidwiveswNPI_r_l,number of advanced Practice Registered Nurses ,"number of advanced Practice Registered Nurses (APRN), with CMS NPI per person ",Log(1+100000*x)
+prep_rate_l,PrEP use,"number of people who had at least one day of prescribed TDF/FTC for PrEP in a calendar year per 100,000 population",log(1 + x)
+nHHs2Persons_r,percentage of households with 2 persons,percentage of households with 2 persons,None
+nHHs3Persons_r,percentage of households with 3 persons,percentage of households with 3 persons,None
+nHHs4Persons_r,percentage of households with 4 persons,percentage of households with 4 persons,None
+nHHs5Persons_r,percentage of households with 5 persons,percentage of households with 5 persons,None
+nHHs6ormorePersons_r,percentage of households with 6 or more persons,percentage of households with 6 or more persons,None
+HHswSupplemntlSecurityInc_r,percentage of Households with SSI,percentage of Households with Supplemental Security Income (5 year average),None
+HHswPublicAssistanceInc_r,percentage of Households with Public Assistance Income ,percentage of Households with Public Assistance Income (5 year average),None
+nSingleParentHHs_r,percentage of single parent households,percentage of single parent households,None
+UnmarriedPartnerHHDiffSex_r,percentage of households as unmarried partner with different sex,percentage of households as unmarried partner with different sex,None
+UnmarriedPartnerHHMale_r,percentage of households as unmarried male partner ,percentage of households as unmarried male partner ,None
+UnmarriedPartnerHHFemale_r,percentage of households as unmarried female partner ,percentage of households as unmarried female partner ,None
+StateName,state name,state name,None
+State,state,state,None
+CountyName,name of county,name of county,None
+CountyNameStateAbbrev,name of county with state abbreviation,name of county with state abbreviation,None
+FIPSStateCode,two-digit state FIPS code,two-digit state FIPS code,None
+FIPSCountyCode,three-digit county FIPS code,three-digit county FIPS code,None
+FederalRegionCode,These are the codes for the ten Federal Regional Offices from the Department of Health and Human Services.,These are the codes for the ten Federal Regional Offices from the Department of Health and Human Services.,None
+CensusRegionCode,The Census Region Codes and Names and Census Division Codes and Names were taken from the ORP HSA ACCESS System.,The Census Region Codes and Names and Census Division Codes and Names were taken from the ORP HSA ACCESS System.,None
+urbanizationizationlevel,urbanization level,urbanization level,None
+MSM_count_l,MSM counts,MSM counts,log(1 + x)
