@@ -58,14 +58,6 @@ After the first code block is completed, run the second code block.
   :alt: cybergisx_loading
   :target: index.html
 
-Model
--------
-
-`Click here to learn more about the model development. <https://www.sciencedirect.com/science/article/abs/pii/S1877584521000356?casa_token=D-UlYtJmBb4AAAAA:9rju56ZxyV-hD4Q7TjkQla4Yr05mt80tqxRFy4oqzOdo7UagnBseBEhGHdq2dpAGLvBOSL4RVA>`_
-
-Data
--------
-To model new HIV diagnosis rates, we consider a variety of explanatory variables. For the full list of data and descriptions, click `here <data_table.html>`_ to see the description of data.
 
 Related Resources
 ------------------
@@ -78,18 +70,16 @@ Related Resources
 
 Contributors
 -----------------
-Su Yeon Han \ :sup:`1`, Chaeyeon Han\ :sup:`1`, Chang Liu\ :sup:`1`, Jinwoo Park\ :sup:`1`, Nattapon Jaroenchai\ :sup:`1`, Zhiyu Li\ :sup:`1`, Shaowen Wang\ :sup:`1`, Bita Fayaz Farkhad\ :sup:`2`, Man-pui Sally Chan\ :sup:`2`, Danielle Sass\ :sup:`3`, Bo Li\ :sup:`4`, Dolores Albarracin\ :sup:`2`
+Su Yeon Han \ :sup:`1`, Chaeyeon Han\ :sup:`1`, Chang Liu\ :sup:`1`, Jinwoo Park\ :sup:`1`, Nattapon Jaroenchai\ :sup:`1`, Zhiyu Li\ :sup:`1`, Shaowen Wang\ :sup:`1`, Bita Fayaz Farkhad\ :sup:`2`, Man-pui Sally Chan\ :sup:`2`, Danielle Sass\ :sup:`3`, Bo Li\ :sup:`1`, Dolores Albarracin\ :sup:`2`
 
 
- 1. CyberGIS Center for Advanced Digital and Spatial Studies, University of Illinois at Urbana-Champaign, Urbana, Illinois
+ 1. University of Illinois Urbana-Champaign
  
  2. University of Pennsylvania
  
  3. Northwestern University
  
- 4. University of Illinois at Urbana-Champaign, Urbana, Illinois
-
-
+ 
 License
 ---------------
 This project is licensed under the Apache License 2.0 - see the `LICENSE <https://github.com/cybergis/CyberGIS-HIV/blob/main/LICENSE>`_ file for details.
@@ -117,6 +107,14 @@ This project is supported by NIH project# 1R01AI147487-01: Development and Valid
   :caption: Visualization Modules
 
   showcase
+
+.. toctree::
+  :maxdepth: 3
+  :hidden:
+  :caption: Model Specifications
+
+  model
+  data_table
 
 .. toctree::
   :hidden:

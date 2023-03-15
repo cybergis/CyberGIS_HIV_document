@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'CyberGIS HIV'
-copyright = '2022, CyberGIS Center'
+copyright = '2023, CyberGIS Center'
 author = 'CyberGIS Center'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -57,7 +57,7 @@ source_suffix = {
 #
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    "repository_url" : "https://github.com/cybergis/CyberGIS_HIV_document",
+    "repository_url" : "https://github.com/cybergis/CyberGIS-HIV",
     "use_repository_button": "True",
 }
 
