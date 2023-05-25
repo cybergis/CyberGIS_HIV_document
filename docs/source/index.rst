@@ -86,7 +86,7 @@ This project is licensed under the Apache License 2.0 - see the `LICENSE <https:
 
 Funding
 ---------------
-This project is supported by NIH project# 1R01AI147487-01: Development and Validation of Regional Models of HIV Vulnerabilities and Solutions
+This project is supported by NIH project# R01AI147487-01: Development and Validation of Regional Models of HIV Vulnerabilities and Solutions
 
 
 
