@@ -1,0 +1,1166 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Summary &#8212; CyberGIS HIV 1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Model Description" href="model.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">CyberGIS HIV 1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Quick Start
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="parameters.html">
+   Customizing Parameters
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Visualization Modules
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="showcase.html">
+   Showcase Gallery
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Model Specifications
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="model.html">
+   Model Description
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data Summary
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/cybergis/CyberGIS-HIV">
+   GitHub Repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://cybergisxhub.cigi.illinois.edu/">
+   CyberGISX
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/cybergis/CyberGIS-HIV"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/data_table.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data Summary</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="data-summary">
+<h1>Data Summary<a class="headerlink" href="#data-summary" title="Permalink to this headline">#</a></h1>
+<p>When choosing an optimal number of variables, it is important to avoid both over-fitting, i.e., low predictive power due to the inclusion of too many variables without statistical justification at the model identification stage, and under-fitting, i.e., poor performance in modeling both the training and test data due to the inclusion of too few variables. We fit the two model parts discussed above separately. Both model parts use stepwise regression, selecting from the explanatory variables described above. The binary part of the model, classifying positive-versus-zero outcomes, selects 40 significant variables and the positive part of the model, predicting diagnosis rates for counties classified as positive, selects 37 significant variables. While the two model parts are allowed to select different variables, a few of the variables are found significant for both model parts. For example, the number of opioid prescriptions, percentage of people participating in food stamp, percentage of population in juvenile facilities, the number of federally qualified health centers, knowledge of HIV status, the rate of HIV testing, HCV death, the rate of PrEP use, percentage of households receiving social security income, rate of illicit drug use, and linkage to HIV care are significant in classifying both positive-versus-zero outcomes and predicting the positive diagnosis rates.</p>
+<p>To model new HIV diagnosis rates, we consider a variety of explanatory variables. For the full list of data and descriptions, see the following table.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 21%" />
+<col style="width: 32%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>label</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Any transformation</p></th>
+<th class="head"><p>Source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FIPS</p></td>
+<td><p>FIPS</p></td>
+<td><p>fips county code</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-odd"><td><p>Year</p></td>
+<td><p>year</p></td>
+<td><p>year</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-even"><td><p>PopEstimate</p></td>
+<td><p>annual resident population estimates</p></td>
+<td><p>annual resident population estimates</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>UnemploymentRate16p</p></td>
+<td><p>unemployment rate</p></td>
+<td><p>Unemployment Rate of persons 16 +</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nDaysMeasuredAirQualityGood</p></td>
+<td><p>number of days measured air quality good</p></td>
+<td><p>number of days measured air quality good</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xGoodAirQualityDays</p></td>
+<td><p>percentage of good air quality days</p></td>
+<td><p>percentage of good air quality days</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>NumberHHs</p></td>
+<td><p>number of households</p></td>
+<td><p>number of households</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PercentUrbanPop</p></td>
+<td><p>percent urban population</p></td>
+<td><p>percent urban population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PercentUrbanHousingUnits</p></td>
+<td><p>percent urban housing units</p></td>
+<td><p>percent urban housing units</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xFamiliesBelowPovertyLevel</p></td>
+<td><p>percentage of families below poverty</p></td>
+<td><p>percentage of families below poverty level</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xDisabledle18CivilNoninstl</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized population less than 18</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized population less than 18 years old (5 year average)</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xDisabled1864CivilNoninstl</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized 18-64 years old</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized 18-64 years old population (5 year average)</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xDisabled65pCivilNoninstl</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized population older than 65</p></td>
+<td><p>percentage of disability for civilian noninstitutionalized population older than 65 years old (5 year average)</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xDidNotWork1664</p></td>
+<td><p>percentage of people aged 16-64 who didn’t work</p></td>
+<td><p>percentage of people aged 16-64 who didn’t work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xAgricForestFishHuntMineWorkers</p></td>
+<td><p>percentage of Agricultural/Forestry/Fisheries/Hunting/Mining workers</p></td>
+<td><p>percentage of Agricultural/Forestry/Fisheries/Hunting/Mining workers</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xConstructionWorkers</p></td>
+<td><p>percentage of Construction workers</p></td>
+<td><p>percentage of Construction workers</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xEducHealthSocAssWorkers</p></td>
+<td><p>percentage of Educational Services, and Health Care and Social Assistance workers</p></td>
+<td><p>percentage of Educational Services, and Health Care and Social Assistance workers</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>xManufacturingWorkers</p></td>
+<td><p>percentage of Manufacturing workers</p></td>
+<td><p>percentage of Manufacturing workers</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xWorkersinOtherIndustries</p></td>
+<td><p>percentage of workers in other industries</p></td>
+<td><p>percentage of workers in other industries</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkersMeantraveltime16p</p></td>
+<td><p>number of workers, mean travel time, 16 +</p></td>
+<td><p>number of workers, mean travel time, 16 +</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>xFemalesDivorced</p></td>
+<td><p>percent of females divorced</p></td>
+<td><p>percent of females divorced</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>5YrTotInfantMortRatele1yr</p></td>
+<td><p>total infant mortality</p></td>
+<td><p>5 year average total infant mortality rate, less than 1 year old</p></td>
+<td><p>None</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-even"><td><p>syphilis_rate</p></td>
+<td><p>syphilis rate</p></td>
+<td><p>the number of syphilis cases per 100,000 population</p></td>
+<td><p>None</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-odd"><td><p>chlamydia_rate</p></td>
+<td><p>chlamydia rate</p></td>
+<td><p>the number of chlamydia cases per 10000 population</p></td>
+<td><p>none</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-even"><td><p>gonorrhea_rate</p></td>
+<td><p>gonorrhea rate</p></td>
+<td><p>the number of gonorrhea cases per 10000 population</p></td>
+<td><p>none</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-odd"><td><p>knowledge</p></td>
+<td><p>knowledge</p></td>
+<td><p>percentage of diagnosed infections among persons living with HIV infection</p></td>
+<td><p>none</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-even"><td><p>linkage</p></td>
+<td><p>linkage to care</p></td>
+<td><p>percentage of diagnosed infections with at least 1 CD4 or viral load test performed ≤1 month after diagnosis</p></td>
+<td><p>none</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-odd"><td><p>hiv_rate</p></td>
+<td><p>HIV rate</p></td>
+<td><p>the number of HIV cases per 100,000 population</p></td>
+<td><p>none</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-even"><td><p>suppression_per</p></td>
+<td><p>viral suppression</p></td>
+<td><p>percentage of diagnosed infections with a viral load result of &lt;200 copies /mL at the most recent viral load test during the previous year.</p></td>
+<td><p>None</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-odd"><td><p>hivmedic_per</p></td>
+<td><p>receipt of HIV medication</p></td>
+<td><p>percentage of diagnosed infections with ≥1 CD4 or viral load tests performed during the year.</p></td>
+<td><p>None</p></td>
+<td><p>CDC NCHHSTP AtlasPlus</p></td>
+</tr>
+<tr class="row-even"><td><p>hcv</p></td>
+<td><p>HCV death</p></td>
+<td><p>deaths among persons with acute viral hepatitis C or chronic viral hepatitis C as an underlying cause of death</p></td>
+<td><p>sqrt(x)</p></td>
+<td><p>Hepvu</p></td>
+</tr>
+<tr class="row-odd"><td><p>opioid_prsc</p></td>
+<td><p>opioid prescriptions</p></td>
+<td><p>opioid prescriptions dispensed in the U.S. per 100 persons.</p></td>
+<td><p>/10</p></td>
+<td><p>CDC opioid data</p></td>
+</tr>
+<tr class="row-even"><td><p>hivtst</p></td>
+<td><p>HIV test</p></td>
+<td><p>HIV test</p></td>
+<td><p>/100</p></td>
+<td><p>BRFSS</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopMale1519_r</p></td>
+<td><p>percentage of male population at age group 15-19</p></td>
+<td><p>percentage of male population at age group 15-19</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopMale2024_r</p></td>
+<td><p>percentage of male population at age group 20-24</p></td>
+<td><p>percentage of male population at age group 20-24</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopMale2544_r</p></td>
+<td><p>percentage of male population at age group 25-44</p></td>
+<td><p>percentage of male population at age group 25-44</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopMale4564_r</p></td>
+<td><p>percentage of male population at age group 45-64</p></td>
+<td><p>percentage of male population at age group 45-64</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopMale65p_r</p></td>
+<td><p>percentage of male population at age group 65 +</p></td>
+<td><p>percentage of male population at age group 65 +</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopFemale1519_r</p></td>
+<td><p>percentage of female population at age group 15-19</p></td>
+<td><p>percentage of female population at age group 15-19</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopFemale2024_r</p></td>
+<td><p>percentage of female population at age group 20-24</p></td>
+<td><p>percentage of female population at age group 20-24</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopFemale2544_r</p></td>
+<td><p>percentage of female population at age group 25-44</p></td>
+<td><p>percentage of female population at age group 25-44</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopFemale4564_r</p></td>
+<td><p>percentage of female population at age group 45-64</p></td>
+<td><p>percentage of female population at age group 45-64</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopFemale65p_r</p></td>
+<td><p>percentage of female population at age group 65 +</p></td>
+<td><p>percentage of female population at age group 65 +</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopTotalMale_r</p></td>
+<td><p>percentage of the population as Male</p></td>
+<td><p>percentage of the population as Male</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopWhite_r</p></td>
+<td><p>percentage of White population</p></td>
+<td><p>percentage of White population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopBlackAfrAm_r</p></td>
+<td><p>percentage of Black African American population</p></td>
+<td><p>percentage of Black African American population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopAsian_r</p></td>
+<td><p>percentage of Asian population</p></td>
+<td><p>percentage of Asian population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopTotHispLatino_r</p></td>
+<td><p>percentage of Hispanic population</p></td>
+<td><p>percentage of Hispanic population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopAmerIndAlaskaNat_r</p></td>
+<td><p>percentage of American Indian/Alaska Native population</p></td>
+<td><p>percentage of American Indian/Alaska Native population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PopNatHawOthPacIsl_r</p></td>
+<td><p>percentage of Native Hawaiian/other Pacific Islander population</p></td>
+<td><p>percentage of Native Hawaiian/other Pacific Islander population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopTwopRaces_r</p></td>
+<td><p>percentage of Two or more races population</p></td>
+<td><p>percentage of Two or more races population</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>MedicareEnrollmentAgedDisabledTot_r</p></td>
+<td><p>percentage of population on Medicare</p></td>
+<td><p>percentage of population on Medicare. The data include counts of Medicare beneficiaries with Medicare Part A which is also known as Hospital Insurance and Medicare Part B which is also known as Medical Insurance.</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>Persons1864HealthInsurance_r</p></td>
+<td><p>percentage of population between 18-64 with health insurance</p></td>
+<td><p>percentage of population between 18-64 with health insurance</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Personsle19HealthInsurance_r</p></td>
+<td><p>percentage of population less than 19 years old with health insurance</p></td>
+<td><p>percentage of population less than 19 years old with health insurance</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PersonsinPoverty_r</p></td>
+<td><p>percentage of Persons Age 0-17 in Poverty</p></td>
+<td><p>percentage of Persons Aged 0-17 in Poverty</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>FoodStampSNAPRecipientEstimate_r</p></td>
+<td><p>percentage of people as Food Stamp/SNAP Recipients</p></td>
+<td><p>percentage of people as Food Stamp/SNAP Recipients</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nHousingUnitsEstimate_r</p></td>
+<td><p>number of Housing Unit per person</p></td>
+<td><p>number of Housing Unit per person</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Persons25pYrsWleHSDiploma_r</p></td>
+<td><p>percentage of persons 25 years or older with less than high school diploma</p></td>
+<td><p>percentage of persons 25 years or older with less than high school diploma</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>Persons25pWHSDiplOrMore_r</p></td>
+<td><p>percentage of persons 25 years or older with a high school or more</p></td>
+<td><p>percentage of persons 25 years or older with a high school or more</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkersDriveAlone16p_r</p></td>
+<td><p>percentage of workers who drive alone to work</p></td>
+<td><p>percentage of workers who drive alone to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkersCarpool16p_r</p></td>
+<td><p>percentage of workers who use carpool to work</p></td>
+<td><p>percentage of workers who use carpool to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkersPublicTrans16p_r</p></td>
+<td><p>percentage of workers who use public transportation to go to work</p></td>
+<td><p>percentage of workers who use public transportation to go to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkersWalktoWork16p_r</p></td>
+<td><p>percentage of workers who walk to work</p></td>
+<td><p>percentage of workers who walk to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkersOtherMeansofTrans16p_r</p></td>
+<td><p>percentage of workers who use other means of transportation to work</p></td>
+<td><p>percentage of workers who use other means of transportation to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkersWorkatHome16p_r</p></td>
+<td><p>percentage of workers who work at home</p></td>
+<td><p>percentage of workers who work at home</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkersle5mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of less than 5 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of less than 5 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkers59mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 5-9 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 5-9 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkers1014mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 10-14 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 10-14 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkers1519mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 15-20 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 15-20 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkers2029mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 20-29 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 20-29 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkers3044mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 30-44 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 30-44 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkers4559mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 45-59 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 45-59 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nWorkers6089mintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of 60-89 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of 60-89 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nWorkers90pmintoWork16p_r</p></td>
+<td><p>percentage of workers with mean travel time of more than 90 minutes to work</p></td>
+<td><p>percentage of workers with mean travel time of more than 90 minutes to work</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nOccupiedHousingUnits_r</p></td>
+<td><p>number of occupied housing units</p></td>
+<td><p>number of occupied housing units per person</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>3YearIschemicHeartDisDeaths_n</p></td>
+<td><p>percentage of ischemic heart disease deaths</p></td>
+<td><p>percentage of ischemic heart disease deaths per person (3-year average)</p></td>
+<td><p>/100</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>MedianHHIncome_l</p></td>
+<td><p>Median Household Income</p></td>
+<td><p>Median Household Income</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PerCapitaPersonalIncome_l</p></td>
+<td><p>Per Capita Personal Income</p></td>
+<td><p>Per Capita Personal Income estimates</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>illicit_l</p></td>
+<td><p>illicit drug use</p></td>
+<td><p>the use of illicit drugs in the past month</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-odd"><td><p>marijuana_l</p></td>
+<td><p>Marijuana Use</p></td>
+<td><p>Marijuana Use in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>marijuana_init_l</p></td>
+<td><p>First Use of Marijuana</p></td>
+<td><p>First Use of Marijuana</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-odd"><td><p>cocaine_l</p></td>
+<td><p>Cocaine Use</p></td>
+<td><p>Cocaine Use in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>alcohol_l</p></td>
+<td><p>Alcohol Use</p></td>
+<td><p>Alcohol Use in the Past Month</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-odd"><td><p>tobacco_l</p></td>
+<td><p>Tobacco Product Use</p></td>
+<td><p>Tobacco Product Use in the Past Month</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>cigar_l</p></td>
+<td><p>Cigarette Use</p></td>
+<td><p>Cigarette Use in the Past Month</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-odd"><td><p>mental_severe_l</p></td>
+<td><p>Serious Mental Illness</p></td>
+<td><p>Serious Mental Illness in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>mental_l</p></td>
+<td><p>Any Mental Illness</p></td>
+<td><p>Any Mental Illness in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-odd"><td><p>suicide_l</p></td>
+<td><p>Had Serious Thoughts of Suicide</p></td>
+<td><p>Had Serious Thoughts of Suicide in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>NSDUH</p></td>
+</tr>
+<tr class="row-even"><td><p>MedianHomeValue_l</p></td>
+<td><p>median home value</p></td>
+<td><p>median home value</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>MedianGrossRent_l</p></td>
+<td><p>median gross rent</p></td>
+<td><p>median gross rent</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>HHIncomeUnder10000_l</p></td>
+<td><p>household income, less than $10,000</p></td>
+<td><p>household income, less than $10,000</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>depress_l</p></td>
+<td><p>Major Depressive Episode</p></td>
+<td><p>Major Depressive Episode in the Past Year</p></td>
+<td><p>log(1+x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>TotalHospitalBeds_r_l</p></td>
+<td><p>total hospital beds per person</p></td>
+<td><p>total hospital beds per person</p></td>
+<td><p>Log(1+1000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PhysNFPrimCarePatCareExclHspRsdnts_r_l</p></td>
+<td><p>number of Physicians, Excluding Hospital Residents</p></td>
+<td><p>number of Physicians, Non-Federal, Total Patient Care, Excluding Hospital Residents per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PhysNFPrimCarePatCareHospRsdnts_r_l</p></td>
+<td><p>number of Physicians, Hospital Residents per person</p></td>
+<td><p>number of Physicians, Non-Federal, Total Patient Care, Hospital Residents per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>MDsNonFedTotGenPractTotal_r_l</p></td>
+<td><p>number of Medical Doctors, Total General Practice</p></td>
+<td><p>number of Medical Doctors, Non-Federal, Total General Practice (General Practice and Family Medicine and Subspecialties), Total per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>MDsNFGenIntMedTotPatCare_r_l</p></td>
+<td><p>number of Medical Doctors, General Internal Medicine,</p></td>
+<td><p>number of Medical Doctors, Non-Federal, General Internal Medicine, Total Patient Care per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>PhysicianAssistantswNPI_r_l</p></td>
+<td><p>number of Physician Assistants</p></td>
+<td><p>number of Physician Assistants (per person) with an NPI per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>PopinJuvenilleFacilities_r_l</p></td>
+<td><p>number of populations in Juvenile Facilities</p></td>
+<td><p>percentage of population in Juvenile Facilities</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>AdvPracticeRegisteredNurseswNPIAPRN_r_l</p></td>
+<td><p>number of Advanced Practice Nurse Midwives</p></td>
+<td><p>number of Advanced Practice Nurse Midwives, with CMS NPI per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>NursePractitionerswNPI_r_l</p></td>
+<td><p>number of Nurse Practitioners</p></td>
+<td><p>number of Nurse Practitioners, with CMS NPI per person</p></td>
+<td><p>Log(1+10000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>STGHospwEmergencyDepartment_r_l</p></td>
+<td><p>number of short-term general hospitals with emergency department</p></td>
+<td><p>number of short-term general hospitals with emergency department per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nHomeHealthAgencies_r_l</p></td>
+<td><p>number of Home Health Agencies</p></td>
+<td><p>number of Home Health Agencies per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nCommunityMentalHealthCtrs_r_l</p></td>
+<td><p>number of Community Mental Health centers</p></td>
+<td><p>number of Community Mental Health centers per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nFedQualifiedHealthCenters_r_l</p></td>
+<td><p>number of Federally Qualified Health Centers</p></td>
+<td><p>number of Federally Qualified Health Centers per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nCommunityHealthCenters_r_l</p></td>
+<td><p>number of Community Health</p></td>
+<td><p>number of Community Health, Centers Grantees Only per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nRuralHealthClinics_r_l</p></td>
+<td><p>number of Rural Health Clinics</p></td>
+<td><p>number of Rural Health Clinics per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nNHSCPrimaryCareSiteswProv_r_l</p></td>
+<td><p>number of NHSC Primary Care sites</p></td>
+<td><p>number of NHSC Primary Care sites per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nNHSCMentalHealthSiteswProv_r_l</p></td>
+<td><p>number of NHSC Mental Health sites</p></td>
+<td><p>number of NHSC Mental Health sites per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>TotalNumberHospitals_r_l</p></td>
+<td><p>number of hospitals</p></td>
+<td><p>total number of hospitals per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>AdvPracticeNurseMidwiveswNPI_r_l</p></td>
+<td><p>number of advanced Practice Registered Nurses</p></td>
+<td><p>number of advanced Practice Registered Nurses (APRN), with CMS NPI per person</p></td>
+<td><p>Log(1+100000*x)</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>prep_rate_l</p></td>
+<td><p>PrEP use</p></td>
+<td><p>number of people who had at least one day of prescribed TDF/FTC for PrEP in a calendar year per 100,000 population</p></td>
+<td><p>log(1 + x)</p></td>
+<td><p>AIDSVu</p></td>
+</tr>
+<tr class="row-even"><td><p>nHHs2Persons_r</p></td>
+<td><p>percentage of households with 2 persons</p></td>
+<td><p>percentage of households with 2 persons</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nHHs3Persons_r</p></td>
+<td><p>percentage of households with 3 persons</p></td>
+<td><p>percentage of households with 3 persons</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nHHs4Persons_r</p></td>
+<td><p>percentage of households with 4 persons</p></td>
+<td><p>percentage of households with 4 persons</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nHHs5Persons_r</p></td>
+<td><p>percentage of households with 5 persons</p></td>
+<td><p>percentage of households with 5 persons</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>nHHs6ormorePersons_r</p></td>
+<td><p>percentage of households with 6 or more persons</p></td>
+<td><p>percentage of households with 6 or more persons</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>HHswSupplemntlSecurityInc_r</p></td>
+<td><p>percentage of Households with SSI</p></td>
+<td><p>percentage of Households with Supplemental Security Income (5 year average)</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>HHswPublicAssistanceInc_r</p></td>
+<td><p>percentage of Households with Public Assistance Income</p></td>
+<td><p>percentage of Households with Public Assistance Income (5 year average)</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>nSingleParentHHs_r</p></td>
+<td><p>percentage of single parent households</p></td>
+<td><p>percentage of single parent households</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>UnmarriedPartnerHHDiffSex_r</p></td>
+<td><p>percentage of households as unmarried partner with different sex</p></td>
+<td><p>percentage of households as unmarried partner with different sex</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>UnmarriedPartnerHHMale_r</p></td>
+<td><p>percentage of households as unmarried male partner</p></td>
+<td><p>percentage of households as unmarried male partner</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>UnmarriedPartnerHHFemale_r</p></td>
+<td><p>percentage of households as unmarried female partner</p></td>
+<td><p>percentage of households as unmarried female partner</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-odd"><td><p>StateName</p></td>
+<td><p>state name</p></td>
+<td><p>state name</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-even"><td><p>State</p></td>
+<td><p>state</p></td>
+<td><p>state</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-odd"><td><p>CountyName</p></td>
+<td><p>name of county</p></td>
+<td><p>name of county</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-even"><td><p>CountyNameStateAbbrev</p></td>
+<td><p>name of county with state abbreviation</p></td>
+<td><p>name of county with state abbreviation</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-odd"><td><p>FIPSStateCode</p></td>
+<td><p>two-digit state FIPS code</p></td>
+<td><p>two-digit state FIPS code</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-even"><td><p>FIPSCountyCode</p></td>
+<td><p>three-digit county FIPS code</p></td>
+<td><p>three-digit county FIPS code</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-odd"><td><p>FederalRegionCode</p></td>
+<td><p>These are the codes for the ten Federal Regional Offices from the Department of Health and Human Services.</p></td>
+<td><p>These are the codes for the ten Federal Regional Offices from the Department of Health and Human Services.</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-even"><td><p>CensusRegionCode</p></td>
+<td><p>The Census Region Codes and Names and Census Division Codes and Names were taken from the ORP HSA ACCESS System.</p></td>
+<td><p>The Census Region Codes and Names and Census Division Codes and Names were taken from the ORP HSA ACCESS System.</p></td>
+<td><p>None</p></td>
+<td><p>Census TIGER</p></td>
+</tr>
+<tr class="row-odd"><td><p>urbanizationizationlevel</p></td>
+<td><p>urbanization level</p></td>
+<td><p>urbanization level</p></td>
+<td><p>None</p></td>
+<td><p>AHRF</p></td>
+</tr>
+<tr class="row-even"><td><p>MSM_count_l</p></td>
+<td><p>MSM counts</p></td>
+<td><p>MSM counts</p></td>
+<td><p>log(1 + x)</p></td>
+<td><p>Jones et al. (2018)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Abbrevations in the Source column and their associated links.</p>
+<div class="line-block">
+<div class="line">* AHRF: <a class="reference external" href="https://data.hrsa.gov/topics/health-workforce/ahrf">https://data.hrsa.gov/topics/health-workforce/ahrf</a></div>
+<div class="line">* AIDSVu: <a class="reference external" href="https://aidsvu.org/">https://aidsvu.org/</a></div>
+<div class="line">* BRFSS</div>
+<div class="line">* Census TIGER: <a class="reference external" href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html</a></div>
+<div class="line">* CDC NCHHSTP AtlasPlus: <a class="reference external" href="https://www.cdc.gov/nchhstp/atlas/index.htm">https://www.cdc.gov/nchhstp/atlas/index.htm</a></div>
+<div class="line">* CDC Opioid data: <a class="reference external" href="https://www.cdc.gov/opioids/data/index.html">https://www.cdc.gov/opioids/data/index.html</a></div>
+<div class="line">* Hepvu: <a class="reference external" href="https://hepvu.org/hepatitis-c-related-mortality-in-the-u-s-at-the-county-level/">https://hepvu.org/hepatitis-c-related-mortality-in-the-u-s-at-the-county-level/</a></div>
+<div class="line">* NSDUH (National Survey on Drug Use and Health): <a class="reference external" href="https://nsduhweb.rti.org/respweb/homepage.cfm">https://nsduhweb.rti.org/respweb/homepage.cfm</a></div>
+<div class="line">* Jones et al. (2018): <a class="reference external" href="https://doi.org/10.1093/ofid/ofy124">https://doi.org/10.1093/ofid/ofy124</a></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="model.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Model Description</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By CyberGIS Center<br/>
+  
+      &copy; Copyright 2023, CyberGIS Center.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
