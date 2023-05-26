@@ -51,7 +51,7 @@ Parameters below are specific to different chart types for Multiple Line Chart(M
     :width: 800
     :alt: advanced_parameter
     :target: parameters.html
-|
+
 Multiple Line Chart(MLC)
 
 .. list-table::
@@ -108,5 +108,6 @@ More Options
     - A Top 10 Chart linked with the right-side map.
   * - ``Exclude Outliers``
     - Exclude extreme outliers to avoid skewed results.
+
 
 
