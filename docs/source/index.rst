@@ -8,13 +8,13 @@ Video Tutorials
 
 1. Log into CyberGISX
 
-.. video:: videos/SAM_Video1_CyberGISX.mp4
+.. video:: videos/Part1_Log_into_CyberGISX.mp4
    :width: 500
    :height: 300
 
 2. Run CyberGIS-HIV
 
-.. video:: videos/SAM_Video2_BasicParam.mp4
+.. video:: videos/Part2_Run_CyberGIS_HIV.mp4
    :width: 500
    :height: 300
    
